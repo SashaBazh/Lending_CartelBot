@@ -1,0 +1,300 @@
+<header class="header">
+    <div class="logo">
+        <img src="../../../assets/images/CARTEL.png" alt="CARTEL" class="logo-img">
+    </div>
+
+    <div class="burger-menu" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav class="nav-menu" [class.active]="menuActive">
+        <a href="#about" (click)="scrollToSection($event, '#about')">О сообществе</a>
+        <a href="#achievements" (click)="scrollToSection($event, '#achievements')">Достижения сообщества</a>
+        <a href="#reviews" (click)="scrollToSection($event, '#reviews')">Отзывы</a>
+        <a href="#tools" (click)="scrollToSection($event, '#tools')">Инструменты и курсы</a>
+        <a href="#feedback" (click)="scrollToSection($event, '#feedback')">Обратная связь</a>
+    </nav>
+
+    <div class="right-section">
+        <button class="subscribe-btn" (click)="goToLink('https://t.me/WelcomeCartel_bot')">Купить подписку</button>
+    </div>
+</header>
+
+<main id="about" class="main-content">
+    <div class="content-text">
+        <div class="main-points">
+            <div class="point-item">
+                <div class="check-img">
+                    <img src="../../../assets/images/check.png" alt="check" class="check-icon">
+                </div>
+                <p>Раскрываем потенциал каждого участника через практические знания и <span class="highlight">взаимную
+                        поддержку</span>.</p>
+            </div>
+            <div class="point-item">
+                <div class="check-img">
+                    <img src="../../../assets/images/check.png" alt="check" class="check-icon">
+                </div>
+                <p>Обучаем <span class="highlight-text">построению успешного бизнеса</span> от <span
+                        class="highlight">опытных предпринимателей</span>. Развиваем <span
+                        class="normal-text">финансовое мышление</span> и навыки управления капиталом.</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="join-btn" (click)="goToLink('https://t.me/WelcomeCartel_bot')">
+                ПРИСОЕДИНИТЬСЯ К СООБЩЕСТВУ
+            </button>
+        </div>
+    </div>
+    <div class="main-image">
+        <img src="../../../assets/images/main-image.png" alt="Main Image" class="feature-image">
+    </div>
+</main>
+
+<section id="achievements" class="community-results">
+    <h2 class="section-title">Результаты и достижения сообщества</h2>
+    <div class="results-container">
+        <div class="result-item">
+            <div class="result-text">
+                <h3 class="result-subtitle">ВЗРЫВНОЙ РОСТ CATANA</h3>
+                <p class="result-name">Максим 31 год</p>
+                <p class="result-start">Старт: <span class="highlight">150$</span></p>
+                <p class="result-result">Итог: <span class="highlight">1,875$</span> за 3 месяца</p>
+                <p class="result-description">
+                    Работая на стройке, Максим <span class="highlight">следил за развитием CATANA</span> и торговался по
+                    108.
+                    После анализа новостей и советов в Сателе и растущем количестве пользователей, он вложил сбережения.
+                    К декабрю CATANA достиг $0.0215 <span class="highlight">(+1150%)</span>.
+                </p>
+            </div>
+            <div class="result-image">
+                <img src="../../../assets/images/result1.jpg" alt="Mountain Road">
+            </div>
+        </div>
+        <div class="result-item">
+            <div class="result-image">
+                <img src="../../../assets/images/result2.jpg" alt="Mountain Road">
+            </div>
+            <div class="result-text">
+                <h3 class="result-subtitle">ВЗРЫВНОЙ РОСТ CATANA</h3>
+                <p class="result-name">Максим 31 год</p>
+                <p class="result-start">Старт: <span class="highlight">150$</span></p>
+                <p class="result-result">Итог: <span class="highlight">1,875$</span> за 3 месяца</p>
+                <p class="result-description">
+                    Работая на стройке, Максим <span class="highlight">следил за развитием CATANA</span> и торговался по
+                    108.
+                    После анализа новостей и советов в Сателе и растущем количестве пользователей, он вложил сбережения.
+                    К декабрю CATANA достиг $0.0215 <span class="highlight">(+1150%)</span>.
+                </p>
+            </div>
+        </div>
+        <div class="result-item">
+            <div class="result-text">
+                <h3 class="result-subtitle">ВЗРЫВНОЙ РОСТ CATANA</h3>
+                <p class="result-name">Максим 31 год</p>
+                <p class="result-start">Старт: <span class="highlight">150$</span></p>
+                <p class="result-result">Итог: <span class="highlight">1,875$</span> за 3 месяца</p>
+                <p class="result-description">
+                    Работая на стройке, Максим <span class="highlight">следил за развитием CATANA</span> и торговался по
+                    108.
+                    После анализа новостей и советов в Сателе и растущем количестве пользователей, он вложил сбережения.
+                    К декабрю CATANA достиг $0.0215 <span class="highlight">(+1150%)</span>.
+                </p>
+            </div>
+            <div class="result-image">
+                <img src="../../../assets/images/result3.jpg" alt="Mountain Road">
+            </div>
+        </div>
+    </div>
+    <div class="join-container">
+        <button class="join-btn" (click)="goToLink('https://t.me/WelcomeCartel_bot')">
+            ПРИСОЕДИНИТЬСЯ К СООБЩЕСТВУ
+        </button>
+    </div>
+</section>
+
+<section id="reviews" class="user-reviews">
+    <h2 class="section-title">Отзывы пользователей</h2>
+    <div class="image-gallery">
+        <img src="../../../assets/images/review1.png" alt="Image 1">
+        <img src="../../../assets/images/review2.png" alt="Image 2">
+        <img src="../../../assets/images/review6.png" alt="Image 3">
+        <img src="../../../assets/images/review4.png" alt="Image 4">
+        <img src="../../../assets/images/review6.png" alt="Image 5">
+        <img src="../../../assets/images/review5.png" alt="Image 6">
+        <img src="../../../assets/images/review7.png" alt="Image 7">
+        <img src="../../../assets/images/review8.png" alt="Image 8">
+        <img src="../../../assets/images/review9.png" alt="Image 9">
+        <img src="../../../assets/images/review10.png" alt="Image 10">
+        <img src="../../../assets/images/review11.png" alt="Image 11">
+        <img src="../../../assets/images/review12.png" alt="Image 12">
+        <img src="../../../assets/images/review13.png" alt="Image 13">
+        <img src="../../../assets/images/review14.png" alt="Image 14">
+        <img src="../../../assets/images/review15.png" alt="Image 15">
+        <img src="../../../assets/images/review16.png" alt="Image 16">
+    </div>
+    <div class="join-container">
+        <button class="join-btn" (click)="goToLink('https://t.me/WelcomeCartel_bot')">
+            ПРИСОЕДИНИТЬСЯ К СООБЩЕСТВУ
+        </button>
+    </div>
+</section>
+<section id="tools" class="tools-courses">
+    <h2 class="section-title">Инструменты и курсы</h2>
+
+    <div class="tools-section">
+        <div class="tools-image">
+            <img src="../../../assets/images/tools-image.png" alt="Trading Tools" class="feature-image">
+        </div>
+        <div class="tools-content">
+            <div class="tools-title">
+                <img src="../../../assets/images/tools-icon.png" alt="Tools" class="icon">
+                <h3>Инструменты</h3>
+            </div>
+            <p class="tools-description">
+                На курсе будут изучаться основные инструменты криптотрейдинга: <span class="highlight">анализ графиков
+                    на TradingView</span>, работа с биржами <span class="highlight">Binance</span> и <span
+                    class="highlight">Bybit</span>, а также использование индикаторов RSI, MACD и Volume для принятия
+                торговых решений.
+            </p>
+            <p class="tools-additional">
+                Студенты освоят навыки управления рисками через <span class="highlight">стоп-лоссы</span> и <span
+                    class="highlight">тейк-профиты</span>, научатся анализировать рыночные <span
+                    class="highlight">тренды</span> и получат практические знания по созданию торговых стратегий с
+                использованием как спотовой торговли, так и фьючерсов.
+            </p>
+        </div>
+    </div>
+
+    <div class="course-section">
+        <div class="course-content">
+            <div class="course-title">
+                <img src="../../../assets/images/course-icon.png" alt="Course" class="icon">
+                <h3>Курс</h3>
+            </div>
+            <div class="course-points">
+                <div class="course-point">
+                    <img src="../../../assets/images/check.png" alt="check" class="check-icon">
+                    <p>Основы <span class="highlight">криптовалют и блокчейна</span>: разбор механики рынка и
+                        перспективных проектов</p>
+                </div>
+                <div class="course-point">
+                    <img src="../../../assets/images/check.png" alt="check" class="check-icon">
+                    <p><span class="highlight">Технический анализ</span>: работа с TradingView, основные индикаторы и
+                        торговые стратегии</p>
+                </div>
+                <div class="course-point">
+                    <img src="../../../assets/images/check.png" alt="check" class="check-icon">
+                    <p><span class="highlight">Практический трейдинг</span>: реальная торговля на Binance/Bybit с
+                        грамотным управлением рисками и капиталом</p>
+                </div>
+            </div>
+        </div>
+        <div class="course-image">
+            <img src="../../../assets/images/course-image.png" alt="Online Course" class="feature-image">
+        </div>
+    </div>
+
+    <div class="results-section">
+        <div class="results-image">
+            <img src="../../../assets/images/results-image.png" alt="Course Results" class="feature-image">
+        </div>
+        <div class="results-content">
+            <div class="results-title">
+                <img src="../../../assets/images/results-icon.png" alt="Results" class="icon">
+                <h3>Итоги курса</h3>
+            </div>
+            <p class="results-description">
+                На курсе будут изучаться основные инструменты криптотрейдинга: <span class="highlight">анализ графиков
+                    на TradingView</span>, работа с биржами <span class="highlight">Binance</span> и <span
+                    class="highlight">ByBit</span>, а также использование индикаторов <span
+                    class="highlight">RSI</span>, <span class="highlight">MACD</span> и <span
+                    class="highlight">Volume</span> для принятия торговых решений.
+            </p>
+            <p class="results-additional">
+                Студенты освоят навыки управления рисками <span class="highlight">через стоп-лоссы и
+                    тейк-профиты</span>, научатся анализировать рыночные тренды и <span class="highlight">получат
+                    практические знания</span> по созданию торговых стратегий с использованием как спотовой торговли,
+                так и фьючерсов.
+            </p>
+        </div>
+    </div>
+
+    <div class="join-container">
+        <button class="join-btn" (click)="goToLink('https://t.me/WelcomeCartel_bot')">
+            ПРИСОЕДИНИТЬСЯ К СООБЩЕСТВУ
+        </button>
+    </div>
+</section>
+<section id="feedback" class="feedback">
+    <div class="feedback-container">
+        <form class="feedback-form" (submit)="submitFeedback($event)">
+            <div class="form-group">
+                <h2 class="section-title">Обратная связь</h2>
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" class="form-input" [(ngModel)]="feedback.name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Введите номер телефона или e-mail</label>
+                <input type="text" id="contact" class="form-input" [(ngModel)]="feedback.contact" name="contact"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="review">Напиши отзыв</label>
+                <textarea id="review" class="form-textarea" [(ngModel)]="feedback.review" name="review"
+                    required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">НАПИШИ ОТЗЫВ</button>
+        </form>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="../../../assets/images/CARTEL.png" alt="Cartel" class="footer-logo-img">
+                <span>Cartel</span>
+            </div>
+            <p class="footer-address">Минска по адресу ул. Притыцкого, 156.</p>
+        </div>
+        
+        <div class="footer-center">
+            <nav class="footer-nav">
+                <a href="#about" (click)="scrollToSection($event, '#about')">О сообществе</a>
+                <a href="#achievements" (click)="scrollToSection($event, '#achievements')">Достижения сообщества</a>
+                <a href="#reviews" (click)="scrollToSection($event, '#reviews')">Отзывы</a>
+                <a href="#tools" (click)="scrollToSection($event, '#tools')">Инструменты и курсы</a>
+            </nav>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-contact">
+                <a href="tel:+375123721234">+375 (123) 721 23 44</a>
+                <span>/</span>
+                <a href="mailto:rfowngkje@gmail.com">rfowngkjegmail.com</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon" (click)="goToLink('https://t.me/WelcomeCartel_bot')">
+                    <img src="../../../assets/images/instagram.png" alt="Instagram">
+                </a>
+                <a href="#" class="social-icon" (click)="goToLink('https://t.me/WelcomeCartel_bot')">
+                    <img src="../../../assets/images/telegram.png" alt="Telegram">
+                </a>
+                <a href="#" class="social-icon" (click)="goToLink('https://t.me/WelcomeCartel_bot')">
+                    <img src="../../../assets/images/twitter.png" alt="Twitter">
+                </a>
+                <a href="#" class="social-icon" (click)="goToLink('https://t.me/WelcomeCartel_bot')">
+                    <img src="../../../assets/images/facebook.png" alt="Facebook">
+                </a>
+                <a href="#" class="social-icon" (click)="goToLink('https://t.me/WelcomeCartel_bot')">
+                    <img src="../../../assets/images/youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2004 – 2024 ООО «Кокос групп». Все права защищены. Перепечатка и любое использование материалов возможно только при наличии ссылки на первоисточник.</p>
+    </div>
+</footer>
